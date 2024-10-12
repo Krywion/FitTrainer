@@ -1,0 +1,121 @@
+.content {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: var(--softBg);
+    border-radius: 8px;
+    box-shadow: var(--box-shadow);
+    margin-bottom: 2rem;
+}
+
+
+.content h2 {
+    font-size: var(--font-size-big);
+    margin-bottom: var(--margin-bottom);
+}
+
+.content p {
+    font-size: var(--font-size-small);
+    margin-bottom: var(--margin-bottom);
+    line-height: 1.6;
+}
+
+.gallery {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: var(--margin-bottom);
+    gap: 1rem;
+    box-shadow: var(--box-shadow);
+}
+
+.gallery-header{
+    width: 100%;
+    text-align: center;
+}
+
+.gallery-header p {
+    font-size: var(--font-size-big);
+}
+
+.gallery-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.25rem;
+}
+
+.gallery img {
+    width: calc(25% - 1rem);
+    max-width: 200px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+.news {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    background-color: var(--softBg);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: var(--box-shadow);
+}
+
+.news h3 {
+    font-size: 1.8rem;
+    margin-bottom: var(--margin-bottom);
+}
+
+.news p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        padding: 2rem 1rem;
+    }
+
+    .content {
+        padding: 1rem;
+    }
+
+    .content h2 {
+        font-size: 2rem;
+    }
+
+    .content p {
+        font-size: 1rem;
+    }
+
+    .gallery img {
+        width: calc(50% - 1rem);
+    }
+
+    .news h3 {
+        font-size: 1.5rem;
+    }
+
+    .news p {
+        font-size: 1rem;
+    }
+}
+
+button {
+    transition: var(--transition);
+    margin-bottom: var(--margin-bottom);
+}
+
+button:hover {
+    background-color: var(--accentColorDark);
+    transform: translateY(-2px);
+}
