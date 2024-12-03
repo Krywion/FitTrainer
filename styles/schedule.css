@@ -1,0 +1,217 @@
+main {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.schedule-hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: var(--softBg);
+    border-radius: 12px;
+    margin-bottom: 4rem;
+}
+
+.schedule-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--heading-color);
+}
+
+.schedule-hero p {
+    font-size: 1.2rem;
+    color: var(--textColor);
+}
+
+.schedule-filters {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 0.5rem 1.5rem;
+    border: 2px solid var(--accentColor);
+    background: transparent;
+    color: var(--textColor);
+    border-radius: 25px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+    background: var(--accentColor);
+    color: white;
+}
+
+.timetable-container {
+    overflow-x: auto;
+    margin-bottom: 2rem;
+    background: var(--softBg);
+    border-radius: 12px;
+    padding: 1rem;
+}
+
+.timetable {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 800px;
+}
+
+.timetable th,
+.timetable td {
+    padding: 1rem;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.timetable th {
+    background: var(--accentColor);
+    color: white;
+    font-weight: bold;
+}
+
+.time {
+    font-weight: bold;
+    color: var(--heading-color);
+}
+
+.class-cardio,
+.class-strength,
+.class-yoga,
+.class-crossfit {
+    padding: 0.5rem;
+    border-radius: 8px;
+}
+
+.class-cardio {
+    background: rgba(255, 99, 71, 0.1);
+}
+
+.class-strength {
+    background: rgba(65, 105, 225, 0.1);
+}
+
+.class-yoga {
+    background: rgba(50, 205, 50, 0.1);
+}
+
+.class-crossfit {
+    background: rgba(255, 165, 0, 0.1);
+}
+
+.class-name {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: var(--heading-color);
+}
+
+.trainer {
+    display: block;
+    font-size: 0.9rem;
+    color: var(--softTextColor);
+}
+
+.legend {
+    margin: 2rem 0;
+    padding: 2rem;
+    background: var(--softBg);
+    border-radius: 12px;
+}
+
+.legend h3 {
+    margin-bottom: 1rem;
+    color: var(--heading-color);
+}
+
+.legend-items {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.color-box {
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+}
+
+.color-box.cardio {
+    background: rgba(255, 99, 71, 0.1);
+}
+
+.color-box.strength {
+    background: rgba(65, 105, 225, 0.1);
+}
+
+.color-box.yoga {
+    background: rgba(50, 205, 50, 0.1);
+}
+
+.color-box.crossfit {
+    background: rgba(255, 165, 0, 0.1);
+}
+
+.cta-section {
+    text-align: center;
+    background: var(--softBg);
+    padding: 4rem 2rem;
+    border-radius: 12px;
+    margin-top: 4rem;
+}
+
+.cta-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--heading-color);
+}
+
+.cta-section p {
+    margin-bottom: 2rem;
+    color: var(--textColor);
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: var(--accentColor);
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: var(--transition);
+}
+
+.cta-button:hover {
+    background: var(--accentColorDark);
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .schedule-hero {
+        padding: 2rem 1rem;
+    }
+
+    .schedule-hero h1 {
+        font-size: 2rem;
+    }
+
+    .timetable-container {
+        margin: 0 -1rem;
+        border-radius: 0;
+    }
+
+    .legend-items {
+        gap: 1rem;
+    }
+}

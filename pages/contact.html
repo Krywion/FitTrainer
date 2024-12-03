@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Fit Trainer</title>
+    <link rel="stylesheet" type="text/css" href="../styles/globals.css">
+    <link rel="stylesheet" type="text/css" href="../styles/contact.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <div class="wrapper">
+        <header>
+            <div class="title">
+                <a href="index.html">
+                    <h1>Fit Trainer</h1>
+                </a>
+            </div>
+            <label class="hamburger-menu">
+                <input type="checkbox">
+            </label>
+            <aside class="sidebar">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="offer.html">Offer</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="schedule.html">Schedule</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="reviews.html">Reviews</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </nav>
+            </aside>
+        </header>
+        <main role="main">
+            <section class="contact-hero">
+                <div class="hero-content">
+                    <h1>Get in Touch</h1>
+                    <p>Have a question or ready to start your fitness journey? We're here to help!</p>
+                </div>
+            </section>
+
+            <div class="contact-container">
+                <section class="contact-info">
+                    <h2>Contact Information</h2>
+                    <div class="info-grid">
+                        <div class="info-card">
+                            <div class="icon">📍</div>
+                            <h3>Location</h3>
+                            <p>123 Main Street</p>
+                            <p>City Center, 12345</p>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="icon">🕒</div>
+                            <h3>Opening Hours</h3>
+                            <p>Monday - Friday: 8:00 - 20:00</p>
+                            <p>Saturday: 9:00 - 18:00</p>
+                            <p>Sunday: 10:00 - 16:00</p>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="icon">📞</div>
+                            <h3>Contact</h3>
+                            <p>Phone: 123-456-789</p>
+                            <p>Email: contact@fitrainer.com</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="contact-form">
+                    <h2>Send Us a Message</h2>
+                    <form action="/send-message" method="POST">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required placeholder="Enter your name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required placeholder="Enter your email">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number (optional)</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="membership">Membership Inquiry</option>
+                                <option value="training">Personal Training</option>
+                                <option value="classes">Group Classes</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" required placeholder="How can we help you?"></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </section>
+            </div>
+
+            <section class="map-section">
+                <h2>Find Us</h2>
+                <div class="map-placeholder">
+                    <!-- Placeholder for map -->
+                    <img src="../assets/map-placeholder.png" alt="Location map" />
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2024 FitTrainer. All rights reserved.</p>
+        </footer>
+    </div>
+</div>
+</body>
+</html>

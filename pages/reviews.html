@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+    <title>Fit Trainer</title>
+    <link rel="stylesheet" type="text/css" href="../styles/globals.css">
+    <link rel="stylesheet" type="text/css" href="../styles/reviews.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <div class="wrapper">
+        <header>
+            <div class="title">
+                <a href="index.html">
+                    <h1>Fit Trainer</h1>
+                </a>
+            </div>
+            <label class="hamburger-menu">
+                <input type="checkbox">
+            </label>
+            <aside class="sidebar">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="offer.html">Offer</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="schedule.html">Schedule</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="reviews.html">Reviews</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </nav>
+            </aside>
+        </header>
+        <main>
+            <div class="reviews-stats">
+                <div class="stats-card">
+                    <div class="stats-header">Overall Rating</div>
+                    <div class="stats-value">4.9</div>
+                    <div class="stars">★★★★★</div>
+                </div>
+
+                <div class="stats-card">
+                    <div class="stats-header">Happy Clients</div>
+                    <div class="stats-value">500+</div>
+                    <div class="stats-icon">👥</div>
+                </div>
+
+                <div class="stats-card">
+                    <div class="stats-header">Success Stories</div>
+                    <div class="stats-value">150+</div>
+                    <div class="stats-icon">🏆</div>
+                </div>
+            </div>
+
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="user-info">
+                        <img src="../assets/review-female.jpeg" alt="Sarah Johnson">
+                        <div class="user-details">
+                            <div class="user-name">Sarah Johnson</div>
+                            <div class="user-plan">Premium Plan Member</div>
+                        </div>
+                    </div>
+                    <div class="review-content">
+                        <div class="rating">★★★★★</div>
+                        <p>I've been training here for 6 months and the results are amazing! The trainers are professional and really care about your progress. Highly recommended!</p>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="user-info">
+                        <img src="../assets/review-1.jpeg" alt="Mike Peterson">
+                        <div class="user-details">
+                            <div class="user-name">Mike Peterson</div>
+                            <div class="user-plan">Elite Plan Member</div>
+                        </div>
+                    </div>
+                    <div class="review-content">
+                        <div class="rating">★★★★★</div>
+                        <p>The personalized nutrition plan combined with training sessions helped me lose 20kg in 4 months. The support from the team is exceptional!</p>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="user-info">
+                        <img src="../assets/review-3.jpeg" alt="John Doe">
+                        <div class="user-details">
+                            <div class="user-name">John Doe</div>
+                            <div class="user-plan">Basic Plan Member</div>
+                        </div>
+                    </div>
+                    <div class="review-content">
+                        <div class="rating">★★★★</div>
+                        <p>Great environment for beginners! The trainers are patient and help you build proper form. I'm seeing progress every week.</p>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="user-info">
+                        <img src="../assets/review-2.jpeg" alt="Tom Richards">
+                        <div class="user-details">
+                            <div class="user-name">Tom Richards</div>
+                            <div class="user-plan">Premium Plan Member</div>
+                        </div>
+                    </div>
+                    <div class="review-content">
+                        <div class="rating">★★★★★</div>
+                        <p>Best gym I've ever been to! The facilities are modern and clean, and the trainers really know their stuff. Worth every penny!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-highlight">
+                <p>"FitTrainer transformed not just my body, but my entire lifestyle. Their holistic approach to fitness and nutrition has helped me achieve goals I never thought possible."</p>
+                <div class="highlight-author">- Jennifer Smith, Elite Plan Member</div>
+            </div>
+
+            <div class="leave-review">
+                <h2>Share Your Experience</h2>
+                <form class="review-form">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="rating">Rating</label>
+                        <select id="rating" name="rating" required>
+                            <option value="5">5 Stars</option>
+                            <option value="4">4 Stars</option>
+                            <option value="3">3 Stars</option>
+                            <option value="2">2 Stars</option>
+                            <option value="1">1 Star</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="review">Your Review</label>
+                        <textarea id="review" name="review" required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-button">Submit Review</button>
+                </form>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; 2024 FitTrainer. All rights reserved.</p>
+        </footer>
+    </div>
+</div>
+</body>
