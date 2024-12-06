@@ -29,7 +29,7 @@
     --bar-width: 60px;
     --bar-height: 8px;
     --hamburger-gap: 6px;
-    --hamburger-margin: 20px; /* Zwiększono margines */
+    --hamburger-margin: 20px;
     --animation-duration: 200ms ease-in-out;
     --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap)*2);
     --hamburger-foreground: #333;
@@ -125,8 +125,8 @@ header {
     width: max-content;
     cursor: pointer;
     position: absolute;
-    top: var(--hamburger-margin); /* Zwiększono margines */
-    right: var(--hamburger-margin); /* Zwiększono margines */
+    top: var(--hamburger-margin);
+    right: var(--hamburger-margin);
     z-index: 3;
 }
 
